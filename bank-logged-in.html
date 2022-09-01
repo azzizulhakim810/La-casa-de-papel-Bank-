@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <title>Bank Inside</title>
+</head>
+<body>
+
+ <div class="mt-10">
+
+  <h1 class="my-5 text-3xl font-bold text-center underline underline-offset-8">La Casa De Papel</h1>
+
+  <!-- Display Field  -->
+
+<div class="mt-10 ml-5 mr-5 w-100 grid grid-cols-3 gap-4 text-center mx-auto">
+  
+  
+  <!-- Display Withdraw  -->
+
+  <div class="bg-red-500 pt-10 pb-10 font-medium text-3xl text-white uppercase rounded-md">
+    <h1>Withdraw</h1>
+    <h1>$<span id="display-withdraw-amount">100</span></h1>
+  </div>
+
+  <!-- Display Deposit  -->
+  
+  <div class="bg-green-500 pt-10 pb-10 font-medium text-3xl text-white uppercase rounded-md">
+    <h1>Deposit</h1>
+    <h1>$<span id="display-deposit-amount">00</span></h1>
+  </div>
+
+  <!-- Display Balance  -->
+  
+  <div class="bg-yellow-500 pt-10 pb-10 font-medium text-3xl text-white uppercase rounded-md">
+    <h1>Balance</h1>
+    <h1>$<span id="display-balance-amount">1500</span></h1>
+  </div>
+</div>
+
+
+<!-- Input Field  -->
+
+<div class="mt-10 ml-5 mr-5 w-100 grid grid-cols-2 gap-4 text-center mx-auto">
+  
+  <!-- Withdraw Input  -->
+
+  <div class="flex justify-center items-center bg-stone-700 pt-10 pb-10 font-medium uppercase">
+    
+    <input type="text" name="withdrawal" id="withdrawal-field" class="pl-3 pt-1 pb-1 pr-2" placeholder="Enter Amount">
+    <button id="withdrawal-btn" class="text-sm ml-5 bg-white pl-5 pr-5 pt-2 pb-2">Withdraw</button>
+
+  </div>
+
+  <!-- Deposit Input  -->
+
+  <div class="flex justify-center items-center bg-stone-700 pt-10 pb-10 font-medium uppercase">
+
+    <input type="text" name="deposit" id="deposit-field" class="pl-3 pt-1 pb-1 pr-2" placeholder="Enter Amount">
+    <button id="deposit-btn" class="text-sm ml-5 bg-white pl-5 pr-5 pt-2 pb-2">Deposit</button>
+
+  </div>
+  
+  
+</div>
+
+</div>
+
+
+
+  <script src="bank-logged-in.js"></script>
+</body>
+</html>
